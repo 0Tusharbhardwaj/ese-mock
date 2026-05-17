@@ -9,7 +9,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/candidates");
+        const res = await axios.get("https://ese-mock.onrender.com/api/candidates");
         setStats({ total: res.data.length });
       } catch (err) {
         console.error("Failed to fetch stats", err);

@@ -24,7 +24,7 @@ const AddCandidate = () => {
     setMessage({ type: "", text: "" });
 
     try {
-      await axios.post("http://localhost:5000/api/candidates", formData);
+      await axios.post("https://ese-mock.onrender.com/api/candidates", formData);
       setMessage({ type: "success", text: "Candidate added successfully!" });
       setFormData({ name: "", email: "", skills: "", experience: "", bio: "" });
     } catch (err) {

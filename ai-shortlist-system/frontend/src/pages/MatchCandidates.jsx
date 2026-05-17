@@ -24,7 +24,7 @@ const MatchCandidates = () => {
     setError("");
     setAiResults(null);
     try {
-      const res = await axios.post("http://localhost:5000/api/match", {
+      const res = await axios.post("https://ese-mock.onrender.com/api/match", {
         requiredSkills: formData.requiredSkills.split(",").map((s) => s.trim()),
         minExperience: Number(formData.minExperience),
       });
@@ -41,7 +41,7 @@ const MatchCandidates = () => {
     setError("");
     setBasicResults(null);
     try {
-      const res = await axios.post("http://localhost:5000/api/match/ai/shortlist", {
+      const res = await axios.post("https://ese-mock.onrender.com/api/match/ai/shortlist", {
         requiredSkills: formData.requiredSkills.split(",").map((s) => s.trim()),
         preferredSkills: formData.preferredSkills.split(",").map((s) => s.trim()),
         minExperience: Number(formData.minExperience),
