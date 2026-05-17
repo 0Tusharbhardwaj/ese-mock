@@ -86,7 +86,7 @@ Return the result strictly as a JSON array of objects with keys: id, name, rank,
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "meta-llama/llama-3-8b-instruct:free", // Use a free model by default
+        model: "meta-llama/llama-3.3-70b-instruct:free", // Use a free model by default
         messages: [{ role: "user", content: prompt }]
       },
       {
