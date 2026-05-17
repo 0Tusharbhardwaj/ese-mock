@@ -7,7 +7,7 @@ const navItems = [
   { name: "Candidates", path: "/candidates", icon: Users },
   { name: "Add Candidate", path: "/add-candidate", icon: UserPlus },
   { name: "Shortlisting AI", path: "/match", icon: Sparkles },
-  { name: "Analytics", path: "#", icon: PieChart },
+  { name: "Analytics", path: "/analytics", icon: PieChart },
   { name: "Settings", path: "#", icon: Settings },
 ];
 

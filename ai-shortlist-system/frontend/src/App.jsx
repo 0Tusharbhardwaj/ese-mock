@@ -5,6 +5,8 @@ import AddCandidate from "./pages/AddCandidate";
 import CandidateList from "./pages/CandidateList";
 import MatchCandidates from "./pages/MatchCandidates";
 
+import Analytics from "./pages/Analytics";
+
 function App() {
   return (
     <Routes>
@@ -13,6 +15,7 @@ function App() {
         <Route path="add-candidate" element={<AddCandidate />} />
         <Route path="candidates" element={<CandidateList />} />
         <Route path="match" element={<MatchCandidates />} />
+        <Route path="analytics" element={<Analytics />} />
       </Route>
     </Routes>
   );
