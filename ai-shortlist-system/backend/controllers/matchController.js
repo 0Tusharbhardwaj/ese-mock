@@ -119,6 +119,9 @@ Return the result strictly as a JSON array of objects with keys: id, name, rank,
     if(err.response) {
       console.error(err.response.data);
     }
-    res.status(500).send("Server Error in AI Shortlist");
+    res.status(500).json({ 
+      msg: "Server Error in AI Shortlist", 
+      details: err.response?.data || err.message 
+    });
   }
 };
