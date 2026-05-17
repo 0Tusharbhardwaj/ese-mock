@@ -6,6 +6,7 @@ import CandidateList from "./pages/CandidateList";
 import MatchCandidates from "./pages/MatchCandidates";
 
 import Analytics from "./pages/Analytics";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="candidates" element={<CandidateList />} />
         <Route path="match" element={<MatchCandidates />} />
         <Route path="analytics" element={<Analytics />} />
+        <Route path="settings" element={<Settings />} />
       </Route>
     </Routes>
   );
